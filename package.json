@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "@types/chrome": "^0.0.181",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.27",
     "@types/react": "^18.0.5",
@@ -18,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set INLINE_RUNTIME_CHUNK=false&&craco build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
