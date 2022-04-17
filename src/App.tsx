@@ -147,10 +147,17 @@ function App() {
         backgroundColor: solved
           ? "rgba(57, 136, 116, .2)"
           : done
-          ? "grey"
+          ? "rgb(206, 212, 220)"
           : undefined,
       }}>
-      <div style={{ textAlign: "center", paddingBottom: 5, fontWeight: 600 }}>
+      <div
+        style={{
+          textAlign: "center",
+          padding: 5,
+          fontWeight: 700,
+          fontFamily: "sans-serif",
+          fontSize: 13,
+        }}>
         {title}
       </div>
 
@@ -185,7 +192,7 @@ function App() {
       {solved || done ? (
         <div
           style={{
-            color: backgroundColor(solved ? "correct" : "not_used"),
+            color: backgroundColor(solved ? "correct" : "wrong_place"),
             fontSize: 16,
             fontWeight: 700,
             textAlign: "center",
