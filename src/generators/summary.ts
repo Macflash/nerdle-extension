@@ -10,7 +10,7 @@ export interface GuessSummary {
   // Then we need a list of all NOT USED at all chars, though this could be included in the above one basically.
   definitelyNotUsed: Set<Char>;
 
-  // TODO! We still don't have the actual target char counts, so we may not correctly come up with valid guesses.
+  // target range for each character in the answer.
   minCounts: Map<Char, number>;
   maxCounts: Map<Char, number>;
 }
